@@ -1,0 +1,54 @@
+; Student
+; CSC 2025 - XXX - Computer Arch/Assembly Language
+; Programming Homework Week 3: Question Portion
+; Date
+
+1.
+decimal_42	EQU 42
+binary_42	EQU 101010b
+octal_42	EQU 52o
+hex_42		EQU 2Ah
+
+2.
+bigEndianDword BYTE 12h, 34h, 56h, 78h
+
+3.
+If you assign a negate to a DWORD (whihc is unsigned as opposed to SDWORD which is signed) there is no error. -127 is stored in memory as FF81. This tells me the assembler doesn't care about the type and doesn't enforce type checking.
+
+4.
+0000: AB
+0001: 89
+0002: 67
+0003: 45
+
+5.
+.data?
+bigArray DWORD 225 DUP(?)
+
+6.
+endOfAlphabet BYTE 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'
+
+7.
+smallestInt SDWORD -2147483648
+
+8.
+wArray WORD 1, 2, 3, 4, 5
+
+9.
+favColor BYTE "57 Blue", 0
+
+10.
+.data?
+d_Array SDWORD 75 DUP(?)
+
+11.
+repeatingSkipString BYTE 250 DUP("SKIP")
+
+12.
+bArray BYTE 45 DUP(0)
+
+13.
+0000: 21
+0004: 43
+0008: 65
+000C: 87
